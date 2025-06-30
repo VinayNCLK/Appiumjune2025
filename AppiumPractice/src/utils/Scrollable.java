@@ -5,13 +5,17 @@ import java.util.Arrays;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.interactions.PointerInput.MouseButton;
+import org.openqa.selenium.interactions.PointerInput.Origin;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class Scrollable extends Generic{
 
@@ -80,4 +84,12 @@ public class Scrollable extends Generic{
 	}
 	
 	
+	public static void tapOnCoordinates(AppiumDriver driver, int pointA_X, int pointA_Y) {
+		Sequence clickPosition = new Sequence(FINGER, 1);
+		clickPosition .addAction(FINGER.createPointerMove(Duration.ZERO, Origin.viewport(), pointA_X,pointA_Y)) 
+		.addAction(FINGER.createPointerDown(MouseButton.LEFT.asArg())) 
+		.addAction(FINGER.createPointerUp(MouseButton.LEFT.asArg())); 
+		driver.perform(Arrays.asList(clickPosition));	
+	}
 }
+	
