@@ -1,49 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case failed]]>
+    </line>
+    <line>
+      <![CDATA[<a href="file:///C:/Users/Admin/Downloads/down.png" target="_blank">click here</a>]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case skipped]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-30T08:37:19 IST" name="Default suite" finished-at="2025-06-30T08:37:19 IST" duration-ms="64">
+  <suite started-at="2025-07-01T08:15:36 IST" name="Suite" finished-at="2025-07-01T08:15:36 IST" duration-ms="69">
     <groups>
     </groups>
-    <test started-at="2025-06-30T08:37:19 IST" name="Default test" finished-at="2025-06-30T08:37:19 IST" duration-ms="64">
-      <class name="day15.Prog2">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="beforeSuite" finished-at="2025-06-30T08:37:19 IST" duration-ms="12" status="PASS">
+    <test started-at="2025-07-01T08:15:36 IST" name="Test" finished-at="2025-07-01T08:15:36 IST" duration-ms="69">
+      <class name="day16.Prog4">
+        <test-method signature="testA()[pri:1, instance:day16.Prog4@4e08711f]" started-at="2025-07-01T08:15:36 IST" name="testA" finished-at="2025-07-01T08:15:36 IST" duration-ms="16" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="beforeTest" finished-at="2025-06-30T08:37:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="beforeClass" finished-at="2025-06-30T08:37:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="beforeMethod" finished-at="2025-06-30T08:37:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testA()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="testA" finished-at="2025-06-30T08:37:19 IST" duration-ms="12" status="PASS">
-          <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="afterMethod" finished-at="2025-06-30T08:37:19 IST" duration-ms="1" status="PASS">
+        <test-method signature="testB()[pri:2, instance:day16.Prog4@4e08711f]" started-at="2025-07-01T08:15:36 IST" name="testB" finished-at="2025-07-01T08:15:36 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test case A failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test case A failed
+at org.testng.Assert.fail(Assert.java:110)
+at day16.Prog4.testB(Prog4.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case failed]]>
+            </line>
+            <line>
+              <![CDATA[<a href="file:///C:/Users/Admin/Downloads/down.png" target="_blank">click here</a>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="afterClass" finished-at="2025-06-30T08:37:19 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testB -->
+        <test-method signature="testC()[pri:3, instance:day16.Prog4@4e08711f]" started-at="2025-07-01T08:15:36 IST" name="testC" finished-at="2025-07-01T08:15:36 IST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test case c skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test case c skipped
+at day16.Prog4.testC(Prog4.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case skipped]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="afterTest" finished-at="2025-06-30T08:37:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:day15.Prog2@3d285d7e]" started-at="2025-06-30T08:37:19 IST" name="afterSuite" finished-at="2025-06-30T08:37:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- day15.Prog2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testC -->
+      </class> <!-- day16.Prog4 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
