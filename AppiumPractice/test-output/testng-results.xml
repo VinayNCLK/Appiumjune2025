@@ -1,52 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Test case started]]>
-    </line>
-    <line>
-      <![CDATA[Test case success]]>
-    </line>
-    <line>
-      <![CDATA[Test case started]]>
-    </line>
-    <line>
-      <![CDATA[Test case failed]]>
-    </line>
-    <line>
-      <![CDATA[<a href="file:///C:/Users/Admin/Downloads/down.png" target="_blank">click here</a>]]>
-    </line>
-    <line>
-      <![CDATA[Test case started]]>
-    </line>
-    <line>
-      <![CDATA[Test case skipped]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-07-01T08:15:36 IST" name="Suite" finished-at="2025-07-01T08:15:36 IST" duration-ms="69">
+  <suite started-at="2025-07-02T08:28:11 IST" name="Default suite" finished-at="2025-07-02T08:28:17 IST" duration-ms="5658">
     <groups>
     </groups>
-    <test started-at="2025-07-01T08:15:36 IST" name="Test" finished-at="2025-07-01T08:15:36 IST" duration-ms="69">
-      <class name="day16.Prog4">
-        <test-method signature="testA()[pri:1, instance:day16.Prog4@4e08711f]" started-at="2025-07-01T08:15:36 IST" name="testA" finished-at="2025-07-01T08:15:36 IST" duration-ms="16" status="PASS">
+    <test started-at="2025-07-02T08:28:11 IST" name="Default test" finished-at="2025-07-02T08:28:17 IST" duration-ms="5658">
+      <class name="day17.Prog2">
+        <test-method is-config="true" signature="setReport()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:11 IST" name="setReport" finished-at="2025-07-02T08:28:12 IST" duration-ms="265" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Test case started]]>
-            </line>
-            <line>
-              <![CDATA[Test case success]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method signature="testB()[pri:2, instance:day16.Prog4@4e08711f]" started-at="2025-07-01T08:15:36 IST" name="testB" finished-at="2025-07-01T08:15:36 IST" duration-ms="4" status="FAIL">
+        </test-method> <!-- setReport -->
+        <test-method signature="doRegistration()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:12 IST" name="doRegistration" finished-at="2025-07-02T08:28:12 IST" duration-ms="24" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Test case A failed]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test case A failed
+              <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:110)
-at day16.Prog4.testB(Prog4.java:20)
+at org.testng.Assert.fail(Assert.java:115)
+at day17.Prog2.doRegistration(Prog2.java:92)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
@@ -77,25 +51,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[Test case started]]>
-            </line>
-            <line>
-              <![CDATA[Test case failed]]>
-            </line>
-            <line>
-              <![CDATA[<a href="file:///C:/Users/Admin/Downloads/down.png" target="_blank">click here</a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method signature="testC()[pri:3, instance:day16.Prog4@4e08711f]" started-at="2025-07-01T08:15:36 IST" name="testC" finished-at="2025-07-01T08:15:36 IST" duration-ms="1" status="SKIP">
+        </test-method> <!-- doRegistration -->
+        <test-method is-config="true" signature="updateTestResults(org.testng.ITestResult)[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:12 IST" name="updateTestResults" finished-at="2025-07-02T08:28:17 IST" duration-ms="5011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doRegistration status=FAILURE method=Prog2.doRegistration()[pri:0, instance:day17.Prog2@158d2680] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTestResults -->
+        <test-method signature="homeDashboard()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="homeDashboard" finished-at="2025-07-02T08:28:17 IST" duration-ms="3" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Test case c skipped]]>
+              <![CDATA[Skip the test case]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Test case c skipped
-at day16.Prog4.testC(Prog4.java:28)
+              <![CDATA[org.testng.SkipException: Skip the test case
+at day17.Prog2.homeDashboard(Prog2.java:80)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
@@ -126,15 +102,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
-            <line>
-              <![CDATA[Test case started]]>
-            </line>
-            <line>
-              <![CDATA[Test case skipped]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testC -->
-      </class> <!-- day16.Prog4 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- homeDashboard -->
+        <test-method is-config="true" signature="updateTestResults(org.testng.ITestResult)[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="updateTestResults" finished-at="2025-07-02T08:28:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homeDashboard status=SKIP method=Prog2.homeDashboard()[pri:0, instance:day17.Prog2@158d2680] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTestResults -->
+        <test-method signature="login()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="login" finished-at="2025-07-02T08:28:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="updateTestResults(org.testng.ITestResult)[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="updateTestResults" finished-at="2025-07-02T08:28:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Prog2.login()[pri:0, instance:day17.Prog2@158d2680] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTestResults -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="endReport" finished-at="2025-07-02T08:28:17 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- day17.Prog2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
