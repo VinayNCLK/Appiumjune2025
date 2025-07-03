@@ -1,140 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
+    <line>
+      <![CDATA[Test case started]]>
+    </line>
+    <line>
+      <![CDATA[Test case success]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-07-02T08:28:11 IST" name="Default suite" finished-at="2025-07-02T08:28:17 IST" duration-ms="5658">
+  <suite started-at="2025-07-03T08:27:36 IST" name="Suite" finished-at="2025-07-03T08:27:36 IST" duration-ms="73">
     <groups>
     </groups>
-    <test started-at="2025-07-02T08:28:11 IST" name="Default test" finished-at="2025-07-02T08:28:17 IST" duration-ms="5658">
-      <class name="day17.Prog2">
-        <test-method is-config="true" signature="setReport()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:11 IST" name="setReport" finished-at="2025-07-02T08:28:12 IST" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setReport -->
-        <test-method signature="doRegistration()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:12 IST" name="doRegistration" finished-at="2025-07-02T08:28:12 IST" duration-ms="24" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at day17.Prog2.doRegistration(Prog2.java:92)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doRegistration -->
-        <test-method is-config="true" signature="updateTestResults(org.testng.ITestResult)[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:12 IST" name="updateTestResults" finished-at="2025-07-02T08:28:17 IST" duration-ms="5011" status="PASS">
+    <test started-at="2025-07-03T08:27:36 IST" name="Test" finished-at="2025-07-03T08:27:36 IST" duration-ms="73">
+      <class name="day18.Prog1">
+        <test-method signature="doreg(java.lang.String,java.lang.String)[pri:0, instance:day18.Prog1@1890516e]" started-at="2025-07-03T08:27:36 IST" name="doreg" data-provider="userDetails" finished-at="2025-07-03T08:27:36 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doRegistration status=FAILURE method=Prog2.doRegistration()[pri:0, instance:day17.Prog2@158d2680] output={null}]]]>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd1]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- updateTestResults -->
-        <test-method signature="homeDashboard()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="homeDashboard" finished-at="2025-07-02T08:28:17 IST" duration-ms="3" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skip the test case]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skip the test case
-at day17.Prog2.homeDashboard(Prog2.java:80)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homeDashboard -->
-        <test-method is-config="true" signature="updateTestResults(org.testng.ITestResult)[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="updateTestResults" finished-at="2025-07-02T08:28:17 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- doreg -->
+        <test-method signature="doreg(java.lang.String,java.lang.String)[pri:0, instance:day18.Prog1@1890516e]" started-at="2025-07-03T08:27:36 IST" name="doreg" data-provider="userDetails" finished-at="2025-07-03T08:27:36 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homeDashboard status=SKIP method=Prog2.homeDashboard()[pri:0, instance:day17.Prog2@158d2680] output={null}]]]>
+                <![CDATA[cde@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd2]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- updateTestResults -->
-        <test-method signature="login()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="login" finished-at="2025-07-02T08:28:17 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- doreg -->
+        <test-method signature="doreg(java.lang.String,java.lang.String)[pri:0, instance:day18.Prog1@1890516e]" started-at="2025-07-03T08:27:36 IST" name="doreg" data-provider="userDetails" finished-at="2025-07-03T08:27:36 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[efg@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doreg -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:day18.Prog1@1890516e]" started-at="2025-07-03T08:27:36 IST" name="login" data-provider="userDetails" finished-at="2025-07-03T08:27:36 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="updateTestResults(org.testng.ITestResult)[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="updateTestResults" finished-at="2025-07-02T08:28:17 IST" duration-ms="0" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:day18.Prog1@1890516e]" started-at="2025-07-03T08:27:36 IST" name="login" data-provider="userDetails" finished-at="2025-07-03T08:27:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=Prog2.login()[pri:0, instance:day17.Prog2@158d2680] output={null}]]]>
+                <![CDATA[cde@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd2]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- updateTestResults -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:day17.Prog2@158d2680]" started-at="2025-07-02T08:28:17 IST" name="endReport" finished-at="2025-07-02T08:28:17 IST" duration-ms="313" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:day18.Prog1@1890516e]" started-at="2025-07-03T08:27:36 IST" name="login" data-provider="userDetails" finished-at="2025-07-03T08:27:36 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[efg@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test case started]]>
+            </line>
+            <line>
+              <![CDATA[Test case success]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- day17.Prog2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+      </class> <!-- day18.Prog1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

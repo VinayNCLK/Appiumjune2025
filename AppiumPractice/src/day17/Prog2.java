@@ -105,7 +105,7 @@ public class Prog2 {
 			driver.get("https://www.testim.io/");
 			//Use TakesScreenshot method to capture screenshot
 			String dateAndTime = Generic.currentDateAndTime();
-			Generic.getScreenShot(driver, methodName, dateAndTime);
+			//Generic.getScreenShot(driver, methodName, dateAndTime);
 			//driver.quit();
 			
 			Markup m = MarkupHelper.createLabel(methodName.toUpperCase()+" FAIL "+"<a href="+"file:///"+System.getProperty("user.dir")+"\\Screenshots\\"+methodName+dateAndTime+".png"+" target=\"_blank\">click here</a>", ExtentColor.RED);

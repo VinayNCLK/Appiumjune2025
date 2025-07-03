@@ -35,7 +35,7 @@ public class Generic {
 		    return formattedDate;
 	}
 	
-	public static void getScreenShot(WebDriver driver, String methodName, String dateAndTime) {
+	public static void getScreenShot(AppiumDriver driver, String methodName, String dateAndTime) {
 		TakesScreenshot screenshot = (TakesScreenshot)driver;
 		//Saving the screenshot in desired location
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
