@@ -11,6 +11,8 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import io.appium.java_client.android.AndroidDriver;
+import testCases.TestBase;
 import utils.Generic;
 
 public class ExtentListeners implements ITestListener, ISuiteListener{
@@ -37,7 +39,9 @@ public class ExtentListeners implements ITestListener, ISuiteListener{
 		    // not implemented
 			  String methodName = result.getMethod().getMethodName();
 			  String dateAndTime = Generic.currentDateAndTime();
-			  //Generic.getScreenShot(driver, methodName, dateAndTime);
+			  Object currentClass = result.getInstance();
+			  AndroidDriver driver = ((TestBase) currentClass).getDriver();
+			  Generic.getScreenShot(driver, methodName, dateAndTime);
               Markup m = MarkupHelper.createLabel(methodName.toUpperCase()+" FAIL "+"<a href="+"file:///"+System.getProperty("user.dir")+"\\Screenshots\\"+methodName+dateAndTime+".png"+" target=\"_blank\">click here</a>", ExtentColor.RED);
 			  test.fail(m);
 		  }

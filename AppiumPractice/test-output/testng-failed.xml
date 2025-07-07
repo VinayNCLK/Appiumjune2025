@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="listeners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="appPackage" value="com.crrepa.band.dafit"/>
+    <parameter name="appActivity" value="com.crrepa.band.my.view.activity.SplashActivity"/>
+    <parameter name="setUdid" value="3200742adcad6679"/>
+    <parameter name="url" value="http://127.0.0.1:4723"/>
     <classes>
-      <class name="day19.Prog1">
+      <class name="testCases.Testcase_ChangeWatchFace">
         <methods>
-          <include name="login"/>
+          <include name="init"/>
+          <include name="updateTheNewWatchFaceTest"/>
+          <include name="tearDown"/>
+          <include name="initPo"/>
         </methods>
-      </class> <!-- day19.Prog1 -->
+      </class> <!-- testCases.Testcase_ChangeWatchFace -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -9,10 +9,12 @@
 
 
   <test thread-count="5" name="Test">
-    <parameter name="appPackage" value="abc"></parameter>
-    <parameter name="appActivity" value="xyz"></parameter>
+    <parameter name="setUdid" value="3200742adcad6679"></parameter>
+    <parameter name="appPackage" value="com.crrepa.band.dafit"></parameter>
+    <parameter name="appActivity" value="com.crrepa.band.my.view.activity.SplashActivity"></parameter>
+     <parameter name="url" value="http://127.0.0.1:4723"></parameter>
      <classes>
-      <class name="day19.Prog2"/>
+      <class name="testCases.Testcase_ChangeWatchFace"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

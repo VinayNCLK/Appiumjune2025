@@ -5,16 +5,21 @@
     <listener class-name="listeners.CustomListeners"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="listeners.ExtentListeners"/>
-    <listener class-name="listeners.RetryListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="appPackage" value="com.crrepa.band.dafit"/>
+    <parameter name="appActivity" value="com.crrepa.band.my.view.activity.SplashActivity"/>
+    <parameter name="setUdid" value="3200742adcad6679"/>
+    <parameter name="url" value="http://127.0.0.1:4723"/>
     <classes>
-      <class name="day18.Prog2">
+      <class name="testCases.Testcase_ChangeWatchFace">
         <methods>
-          <include name="homeDashboard"/>
-          <include name="doRegistration"/>
+          <include name="init"/>
+          <include name="updateTheNewWatchFaceTest"/>
+          <include name="tearDown"/>
+          <include name="initPo"/>
         </methods>
-      </class> <!-- day18.Prog2 -->
+      </class> <!-- testCases.Testcase_ChangeWatchFace -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
