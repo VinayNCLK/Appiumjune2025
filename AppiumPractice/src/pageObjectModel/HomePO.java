@@ -34,4 +34,8 @@ public class HomePO extends ScreenBase{
 	}
 	
 
+	public MyProfile clickProfileIconFromBottomNav() {
+		profileItemBottomNav.click();
+		return new MyProfile(driver);
+	}
 }

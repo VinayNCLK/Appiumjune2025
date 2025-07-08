@@ -15,9 +15,9 @@
       <class name="testCases.Testcase_ChangeWatchFace">
         <methods>
           <include name="init"/>
-          <include name="updateTheNewWatchFaceTest"/>
           <include name="tearDown"/>
           <include name="initPo"/>
+          <include name="updateTheGoal"/>
         </methods>
       </class> <!-- testCases.Testcase_ChangeWatchFace -->
     </classes>

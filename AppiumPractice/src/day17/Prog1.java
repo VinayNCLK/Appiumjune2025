@@ -37,7 +37,7 @@ public class Prog1 {
 		extent.setSystemInfo("Organization", "XYZ");
 	}
 	
-	@Test
+	@Test(groups = "smoke")
 	public void login() {
 		test = extent.createTest("Login test");
 		test.log(Status.INFO, "Enter the user name");

@@ -8,7 +8,7 @@
 </listeners>
 
 
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Regression">
     <parameter name="setUdid" value="3200742adcad6679"></parameter>
     <parameter name="appPackage" value="com.crrepa.band.dafit"></parameter>
     <parameter name="appActivity" value="com.crrepa.band.my.view.activity.SplashActivity"></parameter>
@@ -17,4 +17,5 @@
       <class name="testCases.Testcase_ChangeWatchFace"/>
     </classes>
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->

@@ -2,12 +2,15 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 import listeners.ExtentListeners;
+import pageObjectModel.GoalPO;
 import pageObjectModel.HomePO;
+import pageObjectModel.MyProfile;
 import pageObjectModel.WatchFacesPO;
 import pageObjectModel.WatchPO;
 import utils.ExcelLibraries;
@@ -18,6 +21,8 @@ public class Testcase_ChangeWatchFace extends TestBase{
 	HomePO home;
 	WatchPO watch;
 	WatchFacesPO watchFaces;
+	MyProfile myProfile;
+	GoalPO goal;
 	
 	
 	@BeforeClass
@@ -25,9 +30,11 @@ public class Testcase_ChangeWatchFace extends TestBase{
 		home = new HomePO(driver);
 		watch = new WatchPO(driver);
 		watchFaces = new WatchFacesPO(driver);
+		myProfile = new MyProfile(driver);
+		goal = new GoalPO(driver);
 	}
 	
-	
+
 	
 	
 	@Test
@@ -43,5 +50,18 @@ public class Testcase_ChangeWatchFace extends TestBase{
 	
 	}
 	
+	@Test
+	public void updateTheGoal() {
+		home.clickProfileIconFromBottomNav();
+		ExtentListeners.test.log(Status.INFO, "Clicked on profile icon From Bottom Nav");
+		myProfile.clickGoal();
+		ExtentListeners.test.log(Status.INFO, "Click on creating goal");
+		goal.updateTheSteps();
+		ExtentListeners.test.log(Status.INFO, "Updated the goal from scroll view");
+		goal.clickBackButton();
+		ExtentListeners.test.log(Status.INFO, "clicked on back button");
+		Assert.assertEquals(myProfile.getTheSteps(), "10000 Steps", "new steps are not updated");
+		ExtentListeners.test.log(Status.INFO, "Expected steps are updated successfully");
+	}
 	
 }

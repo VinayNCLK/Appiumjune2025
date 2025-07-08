@@ -1,9 +1,11 @@
 package utils;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
@@ -45,6 +47,23 @@ public class Generic {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public static String readProperties(String file, String key)
+	{
+
+	    Properties prop = new Properties();
+	    //InputStream fins = getClass().getClassLoader().getResourceAsStream(file)	    
+	    try 
+	    {
+	        prop.load(new FileInputStream(file));
+	        //prop.load(fins);
+	    } 
+	    catch (IOException e) {
+	        e.printStackTrace();
+	    }
+
+	    return prop.getProperty(key);
 	}
 	
 }

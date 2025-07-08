@@ -91,5 +91,14 @@ public class Scrollable extends Generic{
 		.addAction(FINGER.createPointerUp(MouseButton.LEFT.asArg())); 
 		driver.perform(Arrays.asList(clickPosition));	
 	}
+	
+	public static void doSwipeWithCoOrdinates(AppiumDriver driver, int startX, int endX, int startY, int endY, int duration) {
+		Sequence swipe = new Sequence(FINGER, 1)
+				.addAction(FINGER.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), startX, startY))
+				.addAction(FINGER.createPointerDown(MouseButton.LEFT.asArg())).addAction(new Pause(FINGER, Duration.ofMillis(duration)))
+				.addAction(FINGER.createPointerMove(Duration.ofMillis(5000), PointerInput.Origin.viewport(), endX, endY))
+				.addAction(FINGER.createPointerUp(MouseButton.LEFT.asArg()));
+		driver.perform(Arrays.asList(swipe));
+	}
 }
 	
