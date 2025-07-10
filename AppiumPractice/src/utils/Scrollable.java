@@ -2,8 +2,10 @@ package utils;
 
 import java.time.Duration;
 import java.util.Arrays;
+import java.util.HashMap;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Pause;
@@ -99,6 +101,42 @@ public class Scrollable extends Generic{
 				.addAction(FINGER.createPointerMove(Duration.ofMillis(5000), PointerInput.Origin.viewport(), endX, endY))
 				.addAction(FINGER.createPointerUp(MouseButton.LEFT.asArg()));
 		driver.perform(Arrays.asList(swipe));
+	}
+	
+	public static void doSwipeUpIOS(AppiumDriver driver, int numberOfTimes) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		HashMap<String, String> scrollObject = new HashMap<String, String>();
+		for(int i=0;i<=numberOfTimes;i++) {
+			scrollObject.put("direction", "up");
+			js.executeScript("mobile: scroll", scrollObject);
+		}
+	}
+	
+	public static void doSwipeDownIOS(AppiumDriver driver, int numberOfTimes) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		HashMap<String, String> scrollObject = new HashMap<String, String>();
+		for(int i=0;i<=numberOfTimes;i++) {
+			scrollObject.put("direction", "down");
+			js.executeScript("mobile: scroll", scrollObject);
+		}
+	}
+	
+	public static void doSwipeLeftIOS(AppiumDriver driver, int numberOfTimes) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		HashMap<String, String> scrollObject = new HashMap<String, String>();
+		for(int i=0;i<=numberOfTimes;i++) {
+			scrollObject.put("direction", "left");
+			js.executeScript("mobile: scroll", scrollObject);
+		}
+	}
+	
+	public static void doSwipeRightIOS(AppiumDriver driver, int numberOfTimes) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		HashMap<String, String> scrollObject = new HashMap<String, String>();
+		for(int i=0;i<=numberOfTimes;i++) {
+			scrollObject.put("direction", "right");
+			js.executeScript("mobile: scroll", scrollObject);
+		}
 	}
 }
 	

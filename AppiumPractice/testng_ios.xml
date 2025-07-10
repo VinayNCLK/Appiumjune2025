@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="listeners.CustomListeners"></listener>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+<listener class-name="listeners.ExtentListeners"></listener>
+</listeners>
+
+
+  <test thread-count="5" name="Regression">
+    <parameter name="setUdid" value="C0B4374F-D53F-4C88-8FC7-AB85B7A3B1D2"></parameter>
+    <parameter name="app" value="/Users/nammaqa/Library/Developer/Xcode/DerivedData/WebDriverAgent-gxxvxnksededkrddnhflxkctufpg/Build/Products/Debug-iphonesimulator/IntegrationApp.app"></parameter>
+    <parameter name="platformVersion" value="18.5"></parameter>
+    <parameter name="url" value="http://127.0.0.1:4723"></parameter>
+     <classes>
+      <class name="testCases.Testcase_ChangeWatchFace"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
